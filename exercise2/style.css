@@ -1,0 +1,44 @@
+.body {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.wrapper {
+    display: flex;
+    height: 600px; 
+    width: 2000px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+.left {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  
+.left .inner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end; 
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  .right {
+    text-align: left;
+    display: flex;
+    }
+
+  .right .inner {
+    display: flex;
+    color: rgba(174, 0, 255, 0.753);
+  }
+
+  .center {
+    display: flex;
+    width: 40%;
+    text-align: center;
+    justify-content: center; 
+    align-items: center;
+  }
