@@ -1,0 +1,20 @@
+CODING ENVIRONMENT: 
+
+BROWSER:
+	Mozilla Firefox (Version 106.0.5 (64-bit))
+
+COMPUTER:
+         Operating System: Windows 10 Home 64-bit (10.0, Build 19045) (19041.vb_release.191206-1406)
+                 Language: English (Regional Setting: English)
+      System Manufacturer: ASUSTeK COMPUTER INC.
+             System Model: GL502VMZ
+                     BIOS: GL502VMZ.301 (type: UEFI)
+                Processor: Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz (8 CPUs), ~2.8GHz
+                   Memory: 16384MB RAM
+
+PROPOSED TESTING ENVIRONMENTS:
+	The best series of environments to run tests to make sure maximum interoperability is to verify the website works on multiple browsers, Mozilla Firefox
+	Opera, Edge, Safari, Chrome, etc. It also would be lucrative to test on multiple operating systems Mac OSX, Windows, and Linux. Following that it would 
+	be good to test with varying screen sizes (probably the most important). This would mean trying the website out on laptops, smartphones, Desktop 
+	computers, etc. This would ensure that the website works in a plethora of environments since websites are probably one of the most in need of ensuring
+	interoperability. 
