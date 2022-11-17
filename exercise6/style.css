@@ -1,0 +1,30 @@
+.carousel {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 600px;
+    overflow: hidden;
+  }
+  
+  .slide__container {
+    display: inline-flex;
+    white-space: nowrap;
+    position: relative;
+    height: 800px;
+  }
+  
+  img {
+    object-fit: cover;
+    border-radius: 25px;
+    width: 600px;
+    height: 800px;
+  }
+
+  .button {
+    background-color: #D8BFD8;
+    border-radius: 10px;
+    color: black;
+    padding: 5px 30px;
+    text-align: center;
+    font-size: 16px;
+  }
