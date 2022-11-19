@@ -5,14 +5,14 @@ function Header() {
     <>
       <div className="header">
         <a href="#default" className="logo">
-          CompanyLogo
+          Zwielich LLC.
         </a>
         <div className="headerRight">
           <a className="active" href="#home">
             Home
           </a>
-          <a href="#contact">Contact</a>
-          <a href="#about">About</a>
+          <a href="mailto:zwielich.jacques@gmail.comm">Contact</a>
+          <a href="https://www.linkedin.com/in/jacques-zwielich-81ab7315a/">About</a>
         </div>
       </div>
     </>

@@ -1,0 +1,16 @@
+.textMain {
+    position: relative;
+    left: 200;
+    bottom: 100;
+    top: 100;
+    width: 80%;
+    padding-left: 10%;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-size: medium;
+ }
+
+ .title {
+    text-align: center;
+    font-size: x-large;
+ }

@@ -8,7 +8,7 @@ function Footer() {
     </head>
 
     <div class="footer">
-    <p>Footer</p>
+    <p>©Jacques Zwielich 2022</p>
 </div>
 </> 
     )

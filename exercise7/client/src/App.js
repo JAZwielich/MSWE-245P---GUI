@@ -7,6 +7,7 @@ import "./App.css";
 import Header from "./Header";
 import Footer from "./Footer";
 import Sidebar from "./Sidebar";
+import TextMain from "./TextMain";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <Footer />
       <Sidebar />
+      <TextMain />
     </div>
   );
 }
