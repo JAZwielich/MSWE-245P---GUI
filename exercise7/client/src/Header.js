@@ -1,5 +1,9 @@
 import "./Header.css";
 
+
+import { Link } from "react-router-dom";
+
+
 function Header() {
   return (
     <>
@@ -8,11 +12,12 @@ function Header() {
           Zwielich LLC.
         </a>
         <div className="headerRight">
-          <a className="active" href="#home">
+          <Link className="active" to="/">
             Home
-          </a>
+            </Link>
           <a href="mailto:zwielich.jacques@gmail.comm">Contact</a>
-          <a href="https://www.linkedin.com/in/jacques-zwielich-81ab7315a/">About</a>
+          <Link to="/SecondView.js">About</Link>
+          
         </div>
       </div>
     </>

@@ -1,7 +1,5 @@
-import "./TextMain.css";
-
-function TextMain() {
-    return (
+const MAIN_DATA = [
+    { content: 
 <>
 <p class = "title">Exerpt from H.P. Lovecrafts "Call of Cthulhu"</p>
 <div class="textMain">
@@ -12,9 +10,19 @@ but some day the piecing together of dissociated knowledge will open up such ter
 That glimpse, like all dread glimpses of truth, flashed out from an accidental piecing together of separated things—in this case an old newspaper item and the notes of a dead professor. 
 I hope that no one else will accomplish this piecing out; certainly, if I live, I shall never knowingly supply a link in so hideous a chain. I think that the professor, too, intended to keep silent regarding the part he knew, and that he would have destroyed his notes had not sudden death seized him.</p>
 </div>
-</> 
-    )
+</>  },
+    { content: 
+      <>
+      <p class = "title">About Jacques Zwielich</p>
+      <div class="textMain">
+      <p>Worked professionally in the audio industry for 5 years. </p>
+      <p>Currently in progress to get a Masters in Software Engineering at UCI</p>
+      <p>Undergraduate Degree in Sound Design with a Minor in Accounting</p>
+      <p>Traveled internationally and worked with many large high profile clients</p>
+      <p>Lots of experiance with Digital Signal Processing</p>
+      <p>Is trying to break into the industry as an Audio Programmer</p>
+      </div>
+      </>},
+  ];
   
-}
-
-export default TextMain;
+  export { MAIN_DATA };
