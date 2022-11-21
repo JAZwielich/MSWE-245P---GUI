@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+.section {
+  box-sizing: border-box;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  padding-left:25px;
+  padding-right: 25px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.sideAndMain {
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  align-content: space-between;
+}

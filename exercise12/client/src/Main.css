@@ -1,0 +1,17 @@
+.main {
+    position: relative;
+    left: 200;
+    bottom: 100;
+    top: 100;
+    width: 80%;
+    padding-left: 10%;
+    color: rgb(0, 0, 0);
+    background-color: #e5e6ed;
+    text-align: left;
+    font-size: medium;
+ }
+
+ .title {
+    text-align: center;
+    font-size: x-large;
+ }

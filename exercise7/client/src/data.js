@@ -20,7 +20,7 @@ I hope that no one else will accomplish this piecing out; certainly, if I live, 
       <p>Undergraduate Degree in Sound Design with a Minor in Accounting</p>
       <p>Traveled internationally and worked with many large high profile clients</p>
       <p>Lots of experiance with Digital Signal Processing</p>
-      <p>Is trying to break into the industry as an Audio Programmer</p>
+      <p>Is trying to break into the industry as an Audio</p>
       </div>
       </>},
   ];

@@ -1,38 +1,30 @@
-// CSS and other resources
-import "./App.css";
-
-// Components
+import './App.css';
 
 import Header from "./Header";
 import Footer from "./Footer";
 import Sidebar from "./Sidebar";
 import LandingView from "./LandingView";
-import SecondView from "./SecondView";
-import WeatherView from "./WeatherView";
-import Login from "./LoginView";
+import FeatherView from "./FeatherView";
+import BandanaView from "./BandanaView";
 
-
-
-
-// External Libraries
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import React from "react";
 
 function App() {
   return (
-    <div className="Login">
-      <Login/>
+    <div className="section">
     <div className="App">
       <BrowserRouter>
       <Header />
-      <Footer />
+      <div className="sideAndMain">
       <Sidebar />
       <Routes>
           <Route index element={<LandingView />} />
-          <Route path="SecondView.js" element={<SecondView />}></Route>
-          <Route path="WeatherView.js" element={<WeatherView />}></Route>
+          <Route path="FeatherView.js" element={<FeatherView />}></Route>
+          <Route path="BandanaView.js" element={<BandanaView />}></Route>
         </Routes>
+        </div>
         </BrowserRouter>
+        <Footer />
     </div>
     </div>
   );

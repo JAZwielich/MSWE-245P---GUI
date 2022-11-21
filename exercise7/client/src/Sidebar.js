@@ -15,6 +15,7 @@ function Sidebar(){
   <a href="https://github.com/MrPatchz/MSWE_245P.git" target="_blank">MSWE 245 Github</a>
   <a href="https://uci.edu/">Current University</a>
   <a href="https://meyersound.com/">Meyer Sound</a>
+  <Link to="/WeatherView.js">Weather</Link>
 </div>
         </>
     )
