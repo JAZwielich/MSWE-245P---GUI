@@ -7,7 +7,7 @@ function Footer() {
     <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
     </head>
 
-    <div class="footer">
+    <div className="footer">
     <p>©Jacques Zwielich 2022</p>
 </div>
 </> 

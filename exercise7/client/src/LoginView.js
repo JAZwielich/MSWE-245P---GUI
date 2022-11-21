@@ -8,24 +8,13 @@ function Login() {
     // refs
     const usernameRef = useRef();
     const passwordRef = useRef();
-    let onSubmit;
     
     // states
     const [usernameValue, setUsernameValue] = useState("");
     const [passwordValue, setPasswordValue] = useState("");
   
-  const LoginForm = ({onSubmit}) => {      
-
-  const handleUsernameChange = (event) => {
-      setUsernameValue(event.target.value);
-  };
-  const handlePasswordChange = (event) => {
-      setPasswordValue(event.target.value);
-  };
-
-
-  <>
-  <form onSubmit={handleSubmit}>
+  const LoginForm = ({onSubmit}) => {return(
+  <form className = "loginArea"onSubmit={handleSubmit}>
      username:
      <input
   ref={usernameRef}
@@ -39,20 +28,21 @@ function Login() {
      <input
   ref={passwordRef}
   label="password"
-  id="password"
-  type="text"
+  id="password-input"
+  type="password"
   value={passwordValue}
   onChange={handlePasswordChange}
 />
-<button
+<button 
+className = "submitButton"
 id="login-button"
 type="submit">
     submit
 </button>
-</form>
-</>
+</form>);
 
-  };
+};
+
 
 
 const handleSubmit = (e) => {
@@ -63,6 +53,17 @@ const handleSubmit = (e) => {
     };
     onSubmit(formData); // upon submission we are calling the onSubmit function
   };
+
+  const onSubmit = (formData) => {
+    console.log(formData);
+  }
+
+  const handleUsernameChange = (event) => {
+    setUsernameValue(event.target.value);
+};
+const handlePasswordChange = (event) => {
+    setPasswordValue(event.target.value);
+};
 
   return (
     <div className="Login">

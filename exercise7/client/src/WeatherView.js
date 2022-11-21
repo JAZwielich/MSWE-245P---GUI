@@ -1,17 +1,16 @@
 import { useState, useEffect } from "react";
-import {loading} from 'react';
 
 
 
 function WeatherView(){
 
     
-const [loadingData, setLoadingData] = useState(true);
+const [loading, setLoadingData] = useState(true);
 const [error, setError] = useState(false);
 const [emptyData, setEmptyData] = useState(false);
 const [data, setData] = useState(false);
-const lat = "33.6425";
-const lon = "-117.8417";
+const lat = "32.7157";
+const lon = "-117.1611";
 
 const zip = "92130"
 const country = "US"
@@ -19,7 +18,7 @@ const APIkey = "d0d76988de6a89c6b546dc5ebcd2c643"
 
     useEffect(() => {
         fetch(
-          `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${APIkey}`
+          `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${APIkey}&units=metric`
         )
           // handling responses
           .then((response) => response.json())
@@ -28,6 +27,7 @@ const APIkey = "d0d76988de6a89c6b546dc5ebcd2c643"
             setLoadingData(false);
             setError(false);
             setData(actualData);
+            console.log(actualData)
           })
           // handling errors
           .catch((err) => {
@@ -39,15 +39,18 @@ const APIkey = "d0d76988de6a89c6b546dc5ebcd2c643"
       // Render
   return (
     <>
-    loading: {loading ? "loading" : "not loading"}
-    <br />
-    error: {error ? "error" : "no error"}
-    <br />
     {!loading && !error && (
         <>
-          location: {data.name}
+          Location: {data.name}
           <br />
-          location: {data.main.temp}
+          Temperature: {data.main.temp}
+          <br/>
+          Temperature-Min: {data.main.temp_min} Temperature-Max: {data.main.temp_max}
+          <br/>
+          Description: {data.weather[0].description}
+          <br/>
+          Wind Speed: {data.wind.speed} Wind Degree: {data.wind.deg}
+          <br/>
         </>
     )}
       </>

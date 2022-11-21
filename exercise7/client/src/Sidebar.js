@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 function Sidebar(){
     return (
     <>
-<div class="sidenav">
+<div className="sidenav">
   <Link to="/">Home Page</Link>
   <Link to="/SecondView.js">About Page</Link>
   <a href="https://www.sandiego.gov/">Hometown</a>
