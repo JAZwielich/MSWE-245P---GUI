@@ -1,0 +1,15 @@
+.submitButton {
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    }
+
+.loginArea {
+    background-color: #d98bfd;
+    color: black;
+    font-family: Calabri;
+}
